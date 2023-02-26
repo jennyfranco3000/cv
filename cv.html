@@ -27,8 +27,10 @@
             linkeidn: 'https://www.linkedin.com/in/jenny-franco/',
             instagram:'https://www.instagram.com/crear_wood/',
             youtube:'https://www.youtube.com/@jennyfrancog',
-            experiencialaboral: [{ cargo: 'Coordinador Civil', empresa: 'TC Tech, Ingeniería Telecomunicaciones ', fecha: '2019 CORDOBA, Argentina', funcion: 'Gestión y revisión de obras civiles para proyectos de telecomunicaciones, avances de proyectos, supervisión en obra y coordinación de subcontratistas, confección de CAOs, cálculo de materiales y manejo de presupuesto. Córdoba Capital. Finalización de obras. ' },
-            { cargo: 'Analista de Ingeniería', empresa: 'PDVSA S.A REFINACION ORIENTE', fecha: '2011- 2018. PUERTO LA CRUZ, Venezuela', funcion: 'Control de proyecto IPC y aplicación de mejores prácticas en el diseño de edificios operacionales, administrativos y residenciales; Supervisión de obra, evaluación y análisis de cambios de alcance en contratos, informes técnicos, manejo de estimados y presupuestos, revisión de materiales bajo especificaciones técnicas según normas y estándares de PDVSA. Renuncia propia' }]
+            experiencialaboral: [
+                { cargo: 'Operador Técnico', empresa: 'FullPrims, Servicio de fabricación adictiva 3D', fecha: '2022 CORDOBA', funcion: 'Ejecutar y asegurar la producción de piezas en impresión 3D, configuración del diseño (Laminado/slicer). Modelado 3D, pos procesado y ensamblaje. Elaboración de documentos técnicos, control de material e inventario.' },
+                { cargo: 'Coordinador Civil', empresa: 'TC Tech, Ingeniería Telecomunicaciones ', fecha: '2019 CORDOBA, Argentina', funcion: 'Gestión y revisión de obras civiles para proyectos de telecomunicaciones, avances de proyectos, supervisión en obra y coordinación de subcontratistas, confección de CAOs, cálculo de materiales y manejo de presupuesto. Córdoba Capital. Finalización de obras.' },
+                { cargo: 'Analista de Ingeniería', empresa: 'PDVSA S.A REFINACION ORIENTE', fecha: '2011- 2018. PUERTO LA CRUZ, Venezuela', funcion: 'Control de proyecto IPC y aplicación de mejores prácticas en el diseño de edificios operacionales, administrativos y residenciales; Supervisión de obra, evaluación y análisis de cambios de alcance en contratos, informes técnicos, manejo de estimados y presupuestos, revisión de materiales bajo especificaciones técnicas según normas y estándares de PDVSA. Renuncia propia' }]
 
         };
     </script>
@@ -107,8 +109,41 @@
                     </ul>
                     
     </div>
-    <div class="card3"> </div>
+ 
+   <div class="card3">Habilidades:
+            <ul><li><script>document.write(obj.habilidades[0])</script></li>
+                <li><script>document.write(obj.habilidades[1])</script></li>
+                <li><script>document.write(obj.habilidades[2])</script></li>
+            </ul></div>
   </div>
+
+   <div class="card4">Experiencia Laboral:
+                <ul><li><span><script>document.write(obj.experiencialaboral[0].cargo)</script></span>
+                        <span><script>document.write(obj.experiencialaboral[0].empresa)</script></span>                    
+                        <span><script>document.write(obj.experiencialaboral[0].fecha)</script></span>
+                        <span><script>document.write(obj.experiencialaboral[0].funcion)</script></span>
+                    </li>
+                    <li><span><script>document.write(obj.experiencialaboral[1].cargo)</script></span>
+                        <span><script>document.write(obj.experiencialaboral[1].empresa)</script></span>                    
+                        <span><script>document.write(obj.experiencialaboral[1].fecha)</script></span>
+                        <span><script>document.write(obj.experiencialaboral[1].funcion)</script></span>
+                    </li>
+                    <li><span><script>document.write(obj.experiencialaboral[2].cargo)</script></span>
+                        <span><script>document.write(obj.experiencialaboral[2].empresa)</script></span>                    
+                        <span><script>document.write(obj.experiencialaboral[2].fecha)</script></span>
+                        <span><script>document.write(obj.experiencialaboral[2].funcion)</script></span>
+                    </li>
+                </ul>
+   </div>
+
+   <div class="card5"> Referencia:
+    <ul>
+        <li><script>document.write(obj.referencia[0])</script></li>
+        <li><script>document.write(obj.referencia[1])</script></li>
+        <li><script>document.write(obj.referencia[2])</script></li>
+    </ul>
+
+   </div>
  </div>
  
 </body>
