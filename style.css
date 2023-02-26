@@ -24,11 +24,12 @@ body{
   width: auto;
   border-radius: 10%;
   }
+  .containerMain{
+    border-color: rgb(220, 19, 19);
+    border: 10px;
+  }
 .container {
-    display: grid;
-    grid-template-columns: 50px 300px;
-    grid-template-rows: 200px 75px;
-    border-color: black;
+    border-color: rgb(14, 67, 223);
     border: 10px;
   }
 .item1{
