@@ -7,11 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Jennny</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script>
         var obj = {
+            bio: 'Jenny Franco G. con 11 años de experiencia en la revisión y análisis de Proyectos IPC de edificios operacionales, administrativos y residenciales, desarrollados para Industria Petrolera en conjunto con equipos multidisciplinarios. 2 años de experiencia elaboración de planos técnicos para la construcción/ remodelación de locales comerciales, viviendas eterminales terrestre. Experiencia y conocimiento en aplicación tecnológica de sistemas constructivos prefabricados. Conocimiento en el diseño de piezas para impresión 3D. Madre y emprendedora con conocimiento básico en modelo de negocios CANVA',
             name: 'Jenny Morella Franco García',
             direccion: 'Cordoba Capital, Antonio del Viso 980',
             email: 'jennyfrancog@gmail.com',
@@ -34,116 +40,149 @@
 
         };
     </script>
+    
 <div class="containerMain">
-    <!-- aca a la izquierda  -->
-    <div class="containerL">
-    <!-- FOTO -->
-        <div class="item item1">
-         <img class='imagen' src="imagen2.jpg" alt='Jenny Franco'/>
-     </div>
-     <!-- Profesion -->
-     <div class="item item1"><script>document.write(obj.profesion)</script></div>
-     <!-- Nomrbe -->
-     <div class="item item2"><script>document.write(obj.name)</script></div> 
-     <!-- Idiomas -->
-     <div class="language">Idiomas: <ul><li><script>document.write(obj.idioma[0])</script></li>
-                                        <li><script>document.write(obj.idioma[1])</script></li> 
-                                    </ul></div>                       
-         
-     <div class="item item3"> </div>
-     <!-- Email -->
-     <div> <img class='imagenEmail' src="email.png" alt='Jenny Franco'/> <script>document.write(obj.email)</script></div>    
-     
-     <!-- Celular -->
-     <div class="item item3"><img class='imagenId' src="images.png" alt='Jenny Franco'/>
-                            <script>document.write(obj.cel)</script>    
-     </div>
-     
-     <!-- Direccion -->
-     <div class="item4">
-         Direccion: <script>document.write(obj.direccion)</script>
-     </div>
-         
-     <!-- Redes Sociales con enlaces -->
-     <div class="item item3">
-      <a onclick=enlace()><img class='imagenIn' src="in.jpg" alt='Linkeidn'/></a>
-      <script>
-         function enlace() {
-              window.location.href=obj.linkeidn;
-         }
-      </script>
-        <a onclick=enlace2()><img class='imagenIn' src="instagram1.png" alt='Linkeidn'/></a>
-        <script>
-           function enlace2() {
-                window.location.href=obj.instagram;
-           }
-        </script>
-          </script>
-          <a onclick=enlace3()><img class='imagenIn' src="youtube.jpg" alt='Linkeidn'/></a>
-          <script>
-             function enlace3() {
-                  window.location.href=obj.youtube;
-             }
-          </script>
-       </div>
-    </div>
+
+    <section class="banner">
+        <!-- Foto de Fondo -->
+        <img class='img-background' src="background.jpg" alt='Background'/>
+
+        <div class="date-container">
+            <!-- Nombre -->
+            <h1><script>document.write(obj.name)</script></h1>
+            <!-- Profecion -->
+            <h3><script>document.write(obj.profesion)</script></h3>
+
+            <!-- Contacto Persona -->
+            <div class="contact">
+                <!-- Email -->
+                <a class="contact-link" href="mailto:jennyfrancog@gmail.com">
+                    <i class="contact-personal-icon fa fa-envelope"></i>
+                    <script>document.write(obj.email)</script>    
+                </a>
+                
+                <!-- Celular -->
+                <a class="contact-link">
+                    <i class="contact-personal-icon fa fa-phone"></i>
+                    <script>document.write(obj.cel)</script>    
+                </a>
+                
+                <!-- Direccion -->
+                <a class="contact-link">
+                    <i class="contact-personal-icon fa fa-map-marker"></i>
+                    <script>document.write(obj.direccion)</script>
+                </a>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="contact">
+                <!-- Youtube -->
+                <a 
+                href="https://www.youtube.com/@jennyfrancog"
+                class="contact-icon fa fa-youtube-play"
+                target="_blank">
+                </a>
+                
+                <!-- Linkedink -->
+                <a 
+                href="https://www.linkedin.com/in/jenny-franco/"
+                class="contact-icon fa fa-linkedin-square"
+                target="_blank">
+                </a>
+                
+                <!-- Instagram-->
+                <a 
+                href="https://www.instagram.com/crear_wood/"
+                class="contact-icon fa fa-instagram"
+                target="_blank">
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Foto de perfil -->
+        <img class='img-perfil' src="imagen2.jpg" alt='Jenny Franco'/>
+    </section>
     
-    <!-- aca a la derecha -->
-   <div class="containerR">
+    <section class="row">
+        <!-- Titulo -->
+        <h3>Biografia<span></span></h3>
+
+        <!-- Texto -->
+        <p><script>document.write(obj.bio)</script></p>
+       
+    </section>
+    <!-- Formacion -->
+    <section class="row dark">
+        <!-- Titulo -->
+        <h3>Formacion <span></span></h3>
+
+        <!-- Texto -->
+        <p><script>document.write(obj.formacion1)</script></p>
+        <p><script>document.write(obj.formacion2)</script></p>    
+    </section>
+
+    <!-- Herramientas -->
+    <section class="row">
+        <!-- Titulo -->
+        <h3>Herramientas<span></span></h3>
+
+        <!-- Texto -->
+        <p><script>document.write(obj.herramienta[0])</script></p>
+        <p><script>document.write(obj.herramienta[1])</script></p>                
+        <p><script>document.write(obj.herramienta[2])</script></p>
+        <p><script>document.write(obj.herramienta[3])</script></p>
+        <p><script>document.write(obj.herramienta[4])</script></p>
+        <p><script>document.write(obj.herramienta[5])</script></p>
+        <p><script>document.write(obj.herramienta[6])</script></p>
+    </section>
     
-    <div class="card1"> Formacion:
-    <ul>
-        <li><script>document.write(obj.formacion1)</script></li>
-        <li><script>document.write(obj.formacion2)</script></li>
-    </ul>    
-    </div>
-   
-    <div class="card2"> Herramientas:
-                   <ul><li><script>document.write(obj.herramienta[0])</script></li>
-                            <li><script>document.write(obj.herramienta[1])</script></li>                
-                            <li><script>document.write(obj.herramienta[2])</script></li>
-                            <li><script>document.write(obj.herramienta[3])</script></li>
-                            <li><script>document.write(obj.herramienta[4])</script></li>
-                            <li><script>document.write(obj.herramienta[5])</script></li>
-                            <li><script>document.write(obj.herramienta[6])</script></li>                
-                    </ul>
-                    
-    </div>
- 
-   <div class="card3">Habilidades:
-            <ul><li><script>document.write(obj.habilidades[0])</script></li>
-                <li><script>document.write(obj.habilidades[1])</script></li>
-                <li><script>document.write(obj.habilidades[2])</script></li>
-            </ul></div>
-  </div>
+    <!-- Habilidades -->
+    <section class="row dark">
+        <!-- Titulo -->
+        <h3>Habilidades<span></span></h3>
 
-   <div class="card4">Experiencia Laboral:
-                <ul><li><span><script>document.write(obj.experiencialaboral[0].cargo)</script></span>
-                        <span><script>document.write(obj.experiencialaboral[0].empresa)</script></span>                    
-                        <span><script>document.write(obj.experiencialaboral[0].fecha)</script></span>
-                        <span><script>document.write(obj.experiencialaboral[0].funcion)</script></span>
-                    </li>
-                    <li><span><script>document.write(obj.experiencialaboral[1].cargo)</script></span>
-                        <span><script>document.write(obj.experiencialaboral[1].empresa)</script></span>                    
-                        <span><script>document.write(obj.experiencialaboral[1].fecha)</script></span>
-                        <span><script>document.write(obj.experiencialaboral[1].funcion)</script></span>
-                    </li>
-                    <li><span><script>document.write(obj.experiencialaboral[2].cargo)</script></span>
-                        <span><script>document.write(obj.experiencialaboral[2].empresa)</script></span>                    
-                        <span><script>document.write(obj.experiencialaboral[2].fecha)</script></span>
-                        <span><script>document.write(obj.experiencialaboral[2].funcion)</script></span>
-                    </li>
-                </ul>
-   </div>
+        <!-- Texto -->
+        <p><script>document.write(obj.habilidades[0])</script></p>
+        <p><script>document.write(obj.habilidades[1])</script></p>
+        <p><script>document.write(obj.habilidades[2])</script></p>
+    </section>
 
-   <div class="card5"> Referencia:
-    <ul>
-        <li><script>document.write(obj.referencia[0])</script></li>
-        <li><script>document.write(obj.referencia[1])</script></li>
-        <li><script>document.write(obj.referencia[2])</script></li>
-    </ul>
+    <!-- Experiencia -->
+    <section class="row">
+        <h3>Experiencia Laboral<span></span></h3>
+        <div class="exp-container">
+            <div class="exp-container_item">
+                <h4><script>document.write(obj.experiencialaboral[0].empresa)</script></h4>                    
+                <p class="position"><script>document.write(obj.experiencialaboral[0].cargo)</script></p>
+                <p class="date"><script>document.write(obj.experiencialaboral[0].fecha)</script></p>
+                <p><script>document.write(obj.experiencialaboral[0].funcion)</script></p>
+            </div>
+            <div class="exp-container_item">
+                <h4><script>document.write(obj.experiencialaboral[1].empresa)</script></h4>                    
+                <p class="position"><script>document.write(obj.experiencialaboral[1].cargo)</script></p>
+                <p class="date"><script>document.write(obj.experiencialaboral[1].fecha)</script></p>
+                <p><script>document.write(obj.experiencialaboral[1].funcion)</script></p>
+            </div>
+            <div class="exp-container_item">
+                <h4><script>document.write(obj.experiencialaboral[2].empresa)</script></h4>                    
+                <p class="position"><script>document.write(obj.experiencialaboral[2].cargo)</script></p>
+                <p class="date"><script>document.write(obj.experiencialaboral[2].fecha)</script></p>
+                <p><script>document.write(obj.experiencialaboral[2].funcion)</script></p>
+            </div>
+        </div>
+    </section>
 
-   </div>
+    <!-- Referencia -->
+    <section class="row dark">
+        <h3>Referencia<span></span></h3>
+        <p><script>document.write(obj.referencia[0])</script></p>
+        <p><script>document.write(obj.referencia[1])</script></p>
+        <p><script>document.write(obj.referencia[2])</script></p>
+    </section>
+
+
+
  </div>
  
 </body>
