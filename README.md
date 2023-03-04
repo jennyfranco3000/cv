@@ -5,6 +5,6 @@ Declaracion de objeto con propiedades de Javascript y traidas desde HTML para po
 
 Importacion de hoja de estilos desde style.css
 
-Deployado en https://app.netlify.com/
+Deployado en https://jennyfranco3000.github.io
 
-https://jennycv.netlify.app/
+
